@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Apply Now | SMR Roadlines</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="career.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="logo">
+<a href="index.html">
+<img src="Logo/SMRLogo1.png" alt="">
+</a>
+</div>
+
+<ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="career.html">Careers</a></li>
+</ul>
+<div class="menu-btn">&#9776;</div>
+</nav>
+
+ <!-- ══════════════════════════════════════════
+       Truck Cursor
+  ══════════════════════════════════════════ -->
+  <div class="truck-cursor">🚚</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="career-hero">
+
+<div class="career-overlay">
+
+<h1>Apply For Your Dream Job</h1>
+
+<p>
+
+Complete the application form below.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FORM ================= -->
+
+<section class="apply-section">
+
+<div class="container">
+
+<div class="apply-box">
+
+<h2>Job Application Form</h2>
+
+<form
+id="careerForm"
+
+action="career.php"
+
+method="POST"
+
+enctype="multipart/form-data">
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Full Name *</label>
+
+<input
+
+type="text"
+
+name="name"
+
+required placeholder="Your Full Name">
+
+</div>
+
+<div class="form-group">
+
+<label>Email *</label>
+
+<input
+
+type="email"
+
+name="email"
+
+required Placeholder="Your Email Address">
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Phone *</label>
+
+<input
+
+type="tel"
+
+name="phone"
+
+required placeholder="Your Phone Number">
+
+</div>
+
+<div class="form-group">
+
+<label>Position Applying For *</label>
+
+<input
+
+type="text"
+
+id="jobTitle"
+
+name="position"
+
+readonly>
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Experience *</label>
+
+<select name="experience">
+
+<option>Fresher</option>
+
+<option>1-2 Years</option>
+
+<option>2-5 Years</option>
+
+<option>5+ Years</option>
+
+<option>10+ Years</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Qualification *</label>
+
+<input
+
+type="text"
+
+name="qualification"
+
+placeholder="MBA / B.Com / B.Tech / etc">
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Current Location *</label>
+
+<input
+
+type="text"
+
+name="location"
+
+placeholder="Your Current Location">
+
+</div>
+
+<div class="form-group">
+
+<label>Date of Birth</label>
+
+<input
+
+type="date"
+
+name="dob">
+
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>Current Salary</label>
+
+<input
+
+type="text"
+
+name="current_salary"
+
+placeholder="₹">
+
+</div>
+
+<div class="form-group">
+
+<label>Expected Salary</label>
+
+<input
+
+type="text"
+
+name="expected_salary"
+
+placeholder="₹">
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label>Upload Resume *</label>
+
+<input
+
+type="file"
+
+name="resume"
+
+accept=".pdf,.doc,.docx"
+
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Cover Letter</label>
+
+<textarea
+
+rows="6"
+
+name="message"
+
+placeholder="Tell us about yourself..."></textarea>
+
+</div>
+
+<button
+
+type="submit"
+
+class="apply-btn-big">
+
+Submit Application
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <a href="index.html">
+  <img src="Logo/SMRLogo1.png" alt="SMR Logistics Redefined Logo">
+          </a>
+</div>
+        <p>Connecting the world through reliable, efficient, and transparent logistics solutions across land, sea, and air.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/smroadlines22/" target="_blank" title="Facebook">f</a>
+          <a href="#" target="_blank" title="Twitter">𝕏</a>
+          <a href="https://in.linkedin.com/in/sonu-tulsiyan-27a267306" target="_blank" title="LinkedIn">in</a>
+          <a href="https://www.instagram.com/smr_logistic_world/" target="_blank" title="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="gallery.html">Our Gallery</a></li>
+          <li><a href="index.html#quote">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="service.html">Air Freight</a></li>
+          <li><a href="service.html">Sea Freight</a></li>
+          <li><a href="service.html">Road Freight</a></li>
+          <li><a href="service.html">Customs Clearance</a></li>
+          <li><a href="service.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+91-9438909922">+91-9438909922</a></li>
+          <li><a href="mailto:info@smroadlines.in">info@smroadlines.in</a></li>
+          <li><a href="index.html#quote">Track Shipment</a></li>
+          <li><a href="index.html#quote">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SM ROADLINES. All Rights Reserved.</p>
+      <p>Built with precision. <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+<script src="career.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

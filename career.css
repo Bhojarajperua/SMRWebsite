@@ -1,0 +1,408 @@
+/* ===========================
+   CAREER HERO
+=========================== */
+
+.career-hero{
+    height:55vh;
+    background:url("TruckImage/Truck12.png") center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.career-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.career-overlay h1{
+    font-size:60px;
+    font-family:'Barlow Condensed',sans-serif;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.career-overlay p{
+    max-width:700px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+/* ===========================
+   COMMON
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:90px 0;
+}
+
+h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+    font-family:'Barlow Condensed',sans-serif;
+}
+
+
+/* ===========================
+   WHY JOIN
+=========================== */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.why-card{
+
+    background:#111111;
+
+    border-radius:12px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(247, 246, 246, 0.932);
+
+    transition:.3s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.why-card h3{
+
+    color:var(--orange);
+
+    margin-bottom:15px;
+
+}
+
+.why-card p{
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+
+/* ===========================
+   JOBS
+=========================== */
+
+.job-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+}
+
+.job-card{
+
+background:#111111;
+
+border-radius:15px;
+
+padding:35px;
+
+box-shadow:0 10px 30px rgba(247, 246, 246, 0.932);
+
+transition:.3s;
+
+}
+
+.job-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.job-card h3{
+
+font-size:26px;
+
+margin-bottom:20px;
+
+color:var(--orange);
+
+}
+
+.job-card p{
+
+margin-bottom:12px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+.apply-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 28px;
+
+background:var(--orange);
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.apply-btn:hover{
+
+background:var(--orange);
+
+}
+
+
+/* ===========================
+   APPLY PAGE
+=========================== */
+
+.apply-section{
+
+background:rgb(26,31,38);
+
+}
+
+.apply-box{
+
+background:rgb(20,17,24);
+
+padding:50px;
+
+border-radius:20px;
+
+transition:.3s;
+
+}
+
+.apply-box:hover{
+
+transform:translateY(-10px);
+box-shadow:0 15px 40px var(--orange);
+
+}
+
+.apply-box h2{
+
+margin-bottom:40px;
+
+}
+
+.form-row{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:25px;
+
+margin-bottom:20px;
+
+}
+
+.form-group{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.form-group label{
+
+font-weight:600;
+
+margin-bottom:8px;
+
+}
+
+.form-group input,
+
+.form-group textarea,
+
+.form-group select{
+
+padding:14px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+font-size:15px;
+
+outline:none;
+
+}
+
+.form-group textarea{
+
+resize:none;
+
+}
+
+.apply-btn-big{
+
+margin-top:20px;
+
+padding:15px 45px;
+
+border:none;
+
+background:var(--orange);
+
+color:#fff;
+
+font-size:17px;
+
+cursor:pointer;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.apply-btn-big:hover{
+
+background:var(--gray);
+
+}
+
+
+/* ===========================
+   CTA
+=========================== */
+
+.career-cta{
+
+text-align:center;
+
+background:#111;
+
+color:#fff;
+
+}
+
+.career-cta h2{
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+.career-cta p{
+
+margin-bottom:30px;
+
+font-size:18px;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.job-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.career-overlay h1{
+
+font-size:40px;
+
+}
+
+.form-row{
+
+grid-template-columns:1fr;
+
+}
+
+.job-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.apply-box{
+
+padding:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.career-overlay h1{
+
+font-size:32px;
+
+}
+
+.career-overlay p{
+
+font-size:15px;
+
+}
+
+}

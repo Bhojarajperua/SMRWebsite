@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONU MONU ROADLINES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+  <img src="Logo/SMRLogo1.png" alt="SMR Logistics Redefined Logo">
+      </a>
+</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="career.html">Careers</a></li>
+    </ul>
+    <a href="#quote" class="nav-cta">Get a Quote</a>
+    <div class="menu-btn">&#9776;</div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       Truck Cursor
+  ══════════════════════════════════════════ -->
+  <div class="truck-cursor">🚚</div>
+
+    <!-- ══════════════════════════════════════════
+       Intro Video
+  ══════════════════════════════════════════ -->
+<section class="Video" id="Vid">
+
+  <!-- Background Video -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="Video/SMRIntro.mp4" type="video/mp4">
+  </video>
+
+</section>
+
+
+  
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+
+   <!-- ADD THIS WRAPPER -->
+  <div class="hero-bg">
+
+    <!-- layers go here (steps 2-4) -->
+     <!-- Layer 1: scrolling grid -->
+  <div class="grid-lines"></div>
+
+  <!-- Layer 2: rotating rings -->
+  <div class="globe-ring"></div>
+
+  <!-- Layer 3: floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <svg class="route-svg"
+     style="position:absolute;right:0;top:0;
+            width:55%;height:100%;
+            pointer-events:none;"
+     viewBox="0 0 600 700"
+     preserveAspectRatio="xMidYMid slice"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <marker id="arrow" markerWidth="6"
+      markerHeight="6" refX="3" refY="3"
+      orient="auto">
+      <path d="M0,0 L0,6 L6,3 z"
+            fill="#f97316" opacity="0.6"/>
+    </marker>
+  </defs>
+
+  <!-- dashed curved route -->
+  <path id="route1"
+    d="M 80,100 Q 200,50 350,180 T 520,320"
+    fill="none" stroke="#f97316"
+    stroke-width="1.2"
+    stroke-dasharray="6,4"
+    opacity="0.3"
+    marker-end="url(#arrow)"/>
+
+  <!-- dot travels along the route -->
+  <circle r="4" fill="#f97316">
+    <animateMotion dur="6s"
+      repeatCount="indefinite">
+      <mpath href="#route1"/>
+    </animateMotion>
+  </circle>
+
+</svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HERO Section Content
+  ══════════════════════════════════════════ -->
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-line"></div>
+        <span>Global Logistics &amp; Freight</span>
+      </div>
+      <h1>Your Global <em>Freight Partner</em></h1>
+      <p>Reliable, efficient, on time — every time. We specialize in domestic and international logistics, offering tailored solutions across land, sea, and air.</p>
+      <div class="hero-btns">
+        <a href="#quote" class="btn-primary">Get a Quote</a>
+        <a href="#services" class="btn-outline">Our Services</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">35<span>+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div>
+          <div class="stat-num">1M<span>+</span></div>
+          <div class="stat-label">Shipments Delivered</div>
+        </div>
+        <div>
+          <div class="stat-num">99<span>%</span></div>
+          <div class="stat-label">On-Time Delivery</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MARQUEE BAR
+  ══════════════════════════════════════════ -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span class="marquee-item">International Shipping <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Domestic Freight <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Air Cargo <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Sea Freight <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Customs Clearance <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Heavy Haul <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Last Mile Delivery <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Dedicated Fleet <span class="marquee-sep">✦</span></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item">International Shipping <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Domestic Freight <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Air Cargo <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Sea Freight <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Customs Clearance <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Heavy Haul <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Last Mile Delivery <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Dedicated Fleet <span class="marquee-sep">✦</span></span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="TruckImage/Warehouse3.png" alt="Logistics warehouse">
+        <div class="about-badge">
+          <div class="about-badge-num">35</div>
+          <div class="about-badge-label">Years of Trust</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-eyebrow">About Us</div>
+        <h2 class="section-titlee">Connecting the World,<br><em>One Shipment</em> at a Time</h2>
+        <p>With decades of experience in global logistics, we deliver cargo securely and efficiently across six continents. Whether it's a single parcel or bulk freight, our tailored solutions ensure timely delivery and complete transparency at every step.</p>
+        <div class="about-feats">
+          <div class="feat"><div class="feat-icon">🌐</div>Global Network</div>
+          <div class="feat"><div class="feat-icon">📍</div>Real-Time Tracking</div>
+          <div class="feat"><div class="feat-icon">🛡️</div>Fully Insured</div>
+          <div class="feat"><div class="feat-icon">⚡</div>Express Options</div>
+        </div>
+        <a href="#services" class="btn-primary">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════ -->
+  <section id="services">
+    <div class="section-eyebrow">What We Do</div>
+    <h2 class="section-titlee">Comprehensive <em>Logistics</em> Services</h2>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">✈️</div>
+        <h3>Air Freight</h3>
+        <p>Ideal for time-sensitive shipments. Priority handling and global air cargo partnerships ensure your cargo arrives fast, no matter the destination.</p>
+        <div class="service-arrow">→</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚢</div>
+        <h3>Sea Freight</h3>
+        <p>Cost-effective solutions for large and heavy cargo. Full container load (FCL) and less-than-container load (LCL) options available.</p>
+        <div class="service-arrow">→</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚛</div>
+        <h3>Road Freight</h3>
+        <p>Fast and dependable domestic freight coverage — from full truckload (FTL) to last-mile delivery across the country.</p>
+        <div class="service-arrow">→</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📦</div>
+        <h3>Customs Clearance</h3>
+        <p>Avoid delays and penalties. Our expert brokers manage all documentation and compliance for smooth cross-border shipping.</p>
+        <div class="service-arrow">→</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏭</div>
+        <h3>Warehousing</h3>
+        <p>Strategic storage facilities across major trade hubs. Inventory management, fulfillment, and distribution under one roof.</p>
+        <div class="service-arrow">→</div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔁</div>
+        <h3>Reverse Logistics</h3>
+        <p>Streamlined returns management and reverse supply chain solutions designed to minimise costs and maximise recovery value.</p>
+        <div class="service-arrow">→</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MARQUEE BAR FOR STATES IN INDIA
+  ══════════════════════════════════════════ -->
+
+
+ <div class="partners">
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span class="marquee-item">Odisha <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Chhattisgarh <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Jharkhand <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">West Bengal <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Andra Pradesh <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Telengana <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Assam <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Rajasthan <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Gujrat <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Karnataka <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">TamilNadu <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Bihar <span class="marquee-sep">✦</span></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item">Odisha <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Chhattisgarh <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Jharkhand <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">West Bengal <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Andra Pradesh <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Telengana <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Assam <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Rajasthan <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Gujrat <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Karnataka <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">TamilNadu <span class="marquee-sep">✦</span></span>
+      <span class="marquee-item">Bihar <span class="marquee-sep">✦</span></span>
+    </div>
+  </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       FLEET
+  ══════════════════════════════════════════ -->
+  <section class="fleet" id="fleet">
+    <div class="fleet-header">
+      <div>
+        <div class="section-eyebrow">Transport Types</div>
+        <h2 class="section-titlee">Diverse <em>Fleet</em> for Every Need</h2>
+      </div>
+      <div class="fleet-tabs">
+        <button class="fleet-tab active" onclick="showFleet(0, this)">Air</button>
+        <button class="fleet-tab" onclick="showFleet(1, this)">Sea</button>
+        <button class="fleet-tab" onclick="showFleet(2, this)">Land</button>
+        <button class="fleet-tab" onclick="showFleet(3, this)">Last Mile</button>
+      </div>
+    </div>
+    <div class="fleet-content" id="fleetContent">
+      <!-- Populated by script.js → showFleet() -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       WHY CHOOSE US
+  ══════════════════════════════════════════ -->
+  <section id="why">
+    <div class="section-eyebrow">Why Choose Us</div>
+    <h2 class="section-titlee">Your Trusted Partner for <em>Global Freight</em></h2>
+    <div class="why-grid">
+      <ul class="why-list">
+        <li class="why-item">
+          <span class="why-num">01</span>
+          <div>
+            <h4>End-to-End Expertise</h4>
+            <p>From pickup to final delivery, we own every part of the logistics chain — no outsourcing, full accountability.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <span class="why-num">02</span>
+          <div>
+            <h4>Real-Time Transparency</h4>
+            <p>Track your shipment live at every stage with our online portal and proactive status notifications.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <span class="why-num">03</span>
+          <div>
+            <h4>Flexible Transport Options</h4>
+            <p>Air, sea, road — we build a transport plan that fits your timeline and budget, not the other way around.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <span class="why-num">04</span>
+          <div>
+            <h4>Customs Made Simple</h4>
+            <p>In-house brokers handle all documentation, compliance, and border procedures for near-zero delays.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <span class="why-num">05</span>
+          <div>
+            <h4>Measurable Reliability</h4>
+            <p>Our 99% on-time delivery rate isn't a promise — it's a published metric we hold ourselves to every quarter.</p>
+          </div>
+        </li>
+      </ul>
+      <div class="why-visual">
+        <img src="TruckImage/Warehouse2.png" alt="Logistics operations">
+        <div class="why-cta-box">
+          <p>Ready to ship with us?</p>
+          <a href="#quote">Contact Us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       STATS BAR
+  ══════════════════════════════════════════ -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-block">
+        <div class="num" data-target="250">0</div>
+        <div class="lbl">Global Destinations</div>
+      </div>
+      <div class="stat-block">
+        <div class="num" data-target="5200">0</div>
+        <div class="lbl">Business Clients</div>
+      </div>
+      <div class="stat-block">
+        <div class="num" data-target="99">0</div>
+        <div class="lbl">% Clearance Success</div>
+      </div>
+      <div class="stat-block">
+        <div class="num" data-target="35">0</div>
+        <div class="lbl">Years in Operation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-eyebrow">Testimonials</div>
+    <h2 class="section-titlee">What Our <em>Clients</em> Say</h2>
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"We've relied on this logistics team for over three years. They're fast, responsive, and consistently deliver on time. Their air and sea freight solutions have streamlined our operations across multiple countries."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Aryan Perua">
+          <div>
+            <div class="testi-name">Aryan Perua</div>
+            <div class="testi-co">GlobalTech Corp.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Customs delays used to be a nightmare until we switched to FreightForce. Their clearance process is smooth, and they always keep us informed. It's been a huge improvement in both speed and service."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://randomuser.me/api/portraits/men/44.jpg" alt="Abinash Tiwari">
+          <div>
+            <div class="testi-name">Abinash Tiwari</div>
+            <div class="testi-co">Evergreen Supplies</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Partnering with their team was a game-changer for our supply chain. They executed our delivery flawlessly with virtually no float time, and their real-time communication gave us total peace of mind."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Elena López">
+          <div>
+            <div class="testi-name">Elena López</div>
+            <div class="testi-co">BlueWave Electronics</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"They handled a complex multi-leg international shipment — air into the US, then trucked to multiple cities — and everything arrived exactly when and where it should. Super efficient and dependable."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fHww" alt="John Cena">
+          <div>
+            <div class="testi-name">John Cena</div>
+            <div class="testi-co">Concentrix</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"They took the stress out of our international shipments. Their knowledgeable team guided us through every hurdle, ensuring our cargo arrived damage-free and ahead of schedule."</p>
+        <div class="testi-author">
+          <img class="testi-avatar" src="https://thumbs.dreamstime.com/b/close-up-young-man-white-background-boy-looking-camera-feeling-58697864.jpg" alt="Blue Heaven">
+          <div>
+            <div class="testi-name">Harry Potter</div>
+            <div class="testi-co">Blue Heaven</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════════ -->
+  <section id="faq">
+    <div class="section-eyebrow">FAQ</div>
+    <h2 class="section-titlee">Got Questions? <em>We've Got Answers</em></h2>
+    <div class="faq-grid">
+
+      <div>
+        <div class="faq-item open">
+          <div class="faq-q" onclick="toggleFaq(this)">What types of cargo do you handle? <span>+</span></div>
+          <div class="faq-a">We handle a wide range of cargo, including general freight, oversized equipment, perishable goods, hazardous materials, and time-sensitive deliveries. Contact us for custom solutions tailored to your shipment.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Do you offer international shipping? <span>+</span></div>
+          <div class="faq-a">Yes, we offer reliable international shipping to destinations worldwide. Whether it's air, sea, or land freight, we ensure secure and timely delivery with full documentation support.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">How do I get a quote? <span>+</span></div>
+          <div class="faq-a">Fill out the quote form on this page or call us directly. Provide shipment details — origin, destination, weight, and dimensions — and we'll respond with a tailored quote within 24 hours.</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Can I track my shipment in real time? <span>+</span></div>
+          <div class="faq-a">Absolutely. We provide live shipment tracking through our online portal. You'll receive a tracking number once your shipment is dispatched so you can monitor status at every stage.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Do you handle customs clearance? <span>+</span></div>
+          <div class="faq-a">Yes, comprehensive customs clearance is part of our service. Our experienced brokers handle all documentation and compliance requirements for smooth, hassle-free import and export.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">Are shipments insured? <span>+</span></div>
+          <div class="faq-a">All shipments can be fully insured. We offer standard cargo insurance and enhanced coverage options for high-value goods. Ask your account manager for details.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       QUOTE FORM
+  ══════════════════════════════════════════ -->
+  <section class="quote-section" id="quote">
+    <div class="quote-inner">
+      <div class="quote-form">
+        <form id="quoteFormm">
+        <h3>Request a Quote</h3>
+        <p>Tell us about your shipment and receive a personalised quote within 24 hours.</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Full Name" required>
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input type="text" name="company" placeholder="Your Company Name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="valid@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="+91-XXXXXXXXXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select name="service">
+            <option value="">Select a service…</option>
+            <option>Fly Ash</option>
+            <option>Mining</option>
+            <option>Alumina Powder</option>
+            <option>Cement</option>
+            <option>Oil Transport</option>
+            <option>Chemical Transport</option>
+            <option>Air Freight</option>
+            <option>Sea Freight</option>
+            <option>Road Freight</option>
+            <option>Warehousing</option>
+            <option>Heavy Haul &amp; Oversized</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Brief Description</label>
+          <textarea name="message" placeholder="Describe your shipment — origin, destination, weight, special requirements…"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Inquiry →</button>
+        </form>
+      </div>
+
+      <div class="quote-info">
+        <div class="section-eyebrow">Get in Touch</div>
+        <h2 class="section-titlee">Let's Move <em>What Matters</em></h2>
+        <p>Our logistics team is available around the clock to help plan your next shipment. Whether you're moving a single pallet or an entire fleet of containers, we have the network and expertise to get it there.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+
+            <div class="contact-ico">📞</div>
+            <div>
+              <div class="sub">Call Us</div>
+              <a href="tel:+91-9438909922">+91-9438909922</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-ico">✉️</div>
+            <div>
+              <div class="sub">Email</div>
+              <a href="mailto:info@smroadlines.in">info@smroadlines.in</a>
+              <br>
+              <a href="mailto:hr@smroadlines.in">hr@smroadlines.in</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-ico">🕐</div>
+            <div>
+              <div class="sub">Hours</div>
+              <span style="color:var(--text);font-size:15px;">24/7 Operations Support</span>
+            </div>
+          </div>
+        </div>
+        <div class="quote-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8620.465560308512!2d84.02808988722602!3d21.53849435419767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a211100173086e3%3A0x70be7a7da34f8615!2sSonu%20Monu%20Roadlines!5e1!3m2!1sen!2sin!4v1782124108773!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PARTNERS
+  ══════════════════════════════════════════ -->
+  <div class="partners">
+    <div class="partners-label">Trusted by Industry Leaders</div>
+    <div class="partners-row">
+      <div class="marquee-track">
+      <span class="marquee-item"><img src="Clients/client1.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client2.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client3.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client5.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client7.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client10.png" alt=""> <span class="marquee-sep"></span></span>      
+      <span class="marquee-item"><img src="Clients/client12.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client13.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client14.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client15.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client16.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client17.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/Client18.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client1.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client2.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client3.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client5.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client7.png" alt=""> <span class="marquee-sep"></span></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-item"><img src="Clients/client1.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client2.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client3.png" alt=""> <span class="marquee-sep"></span></span>      
+      <span class="marquee-item"><img src="Clients/client5.png" alt=""> <span class="marquee-sep"></span></span>      
+      <span class="marquee-item"><img src="Clients/client7.png" alt=""> <span class="marquee-sep"></span></span>      
+      <span class="marquee-item"><img src="Clients/client10.png" alt=""> <span class="marquee-sep"></span></span>      
+      <span class="marquee-item"><img src="Clients/client12.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client13.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client14.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client15.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client16.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client17.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/Client18.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client1.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client2.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client3.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client5.png" alt=""> <span class="marquee-sep"></span></span>
+      <span class="marquee-item"><img src="Clients/client7.png" alt=""> <span class="marquee-sep"></span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <a href="index.html">
+  <img src="Logo/SMRLogo1.png" alt="SMR Logistics Redefined Logo">
+          </a>
+</div>
+        <p>Connecting the world through reliable, efficient, and transparent logistics solutions across land, sea, and air.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/smroadlines22/" target="_blank" title="Facebook">f</a>
+          <a href="#" target="_blank" title="Twitter">𝕏</a>
+          <a href="https://in.linkedin.com/in/sonu-tulsiyan-27a267306" target="_blank" title="LinkedIn">in</a>
+          <a href="https://www.instagram.com/smr_logistic_world/" target="_blank" title="Instagram">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="gallery.html">Our Gallery</a></li>
+          <li><a href="index.html#quote">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="service.html">Air Freight</a></li>
+          <li><a href="service.html">Sea Freight</a></li>
+          <li><a href="service.html">Road Freight</a></li>
+          <li><a href="service.html">Customs Clearance</a></li>
+          <li><a href="service.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+91-9438909922">+91-9438909922</a></li>
+          <li><a href="mailto:info@smroadlines.in">info@smroadlines.in</a></li>
+          <li><a href="index.html#quote">Track Shipment</a></li>
+          <li><a href="index.html#quote">Get a Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SM ROADLINES. All Rights Reserved.</p>
+      <p>Built with precision. <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
