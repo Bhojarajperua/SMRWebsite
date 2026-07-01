@@ -573,7 +573,7 @@ footer { background: var(--black); padding: 80px 5% 0; border-top: 1px solid var
   height: 100%;
 
   object-fit: cover;      /* Fill entire section */
-  object-position: center; /* Center the video */
+  object-position: 60%; /* Center the video */
 }
 /* Tablet */
 @media (max-width: 992px) {
@@ -1429,4 +1429,9 @@ body {
   .nav-links.show{
     display:flex !important;
   }
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
 }
